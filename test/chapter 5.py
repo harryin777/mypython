@@ -91,3 +91,21 @@ print(y)
 print("-----------------------------------------")
 
 # 集合 set 集合是由不重复元素组成的无序容器
+print("set")
+basket = {"a", "b", "p"}
+a = set('2313')
+a = set('absdfjosdif')
+b = set('sdf')
+# 支持这种运算，NB，也支持逻辑运算  ^ letters in b or in a but not both
+print(a - b)
+print("-----------------------------------------")
+
+# 字典
+print("字典")
+ddd = {"a": 1, "b": 2}
+sorted(ddd)
+print(ddd)
+aaa = dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+print(aaa)
+# 关键字是比较简单的字符串时，直接用关键字参数指定键值对更便捷
+ccc = dict(sape=4139, guido=4127, jack=4098)
