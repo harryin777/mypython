@@ -109,3 +109,32 @@ aaa = dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 print(aaa)
 # 关键字是比较简单的字符串时，直接用关键字参数指定键值对更便捷
 ccc = dict(sape=4139, guido=4127, jack=4098)
+print("-----------------------------------------")
+
+# 循环技巧
+print("循环技巧")
+# items
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+    print(k, v)
+# enumerate
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+# zip
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print('What is your {0}?  It is {1}.'.format(q, a))
+# 反转顺序
+for i in reversed(questions):
+    print(i)
+# 排序
+aaa = [1, 6, 5, 4]
+for i in sorted(aaa):
+    print(i)
+# 去重
+bbb = [9, 9, 99, 999, 999]
+for i in set(bbb):
+    print(i)
+
+print(__name__)
