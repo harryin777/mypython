@@ -27,7 +27,7 @@ print(numList)
 # 删除 第一个出现的该元素，未找到指定元素时，触发 ValueError 异常
 numList.remove('b')
 print(numList)
-print("-----------------------------------------")
+print("-"*40)
 
 # 实现队列，列表实现队列效率很低，用 collections.deque
 print("队列")
@@ -35,7 +35,7 @@ from collections import deque
 
 # 这里不知道为什么不能用 TODO 康康
 queue1 = deque["aa", "bb", "cc"]
-print("-----------------------------------------")
+print("-"*40)
 
 # 列表推导式
 # 列表推导式的方括号内包含以下内容：
@@ -72,7 +72,7 @@ matrix = [
 
 matrix = [[row[i] for row in matrix] for i in range(4)]
 print(matrix)
-print("-----------------------------------------")
+print("-"*40)
 
 # 元组
 # 空元组用一对小括号
@@ -88,8 +88,7 @@ print(len(oneElement))
 x, y = u
 print(x)
 print(y)
-print("-----------------------------------------")
-
+print("-"*40)
 # 集合 set 集合是由不重复元素组成的无序容器
 print("set")
 basket = {"a", "b", "p"}
@@ -98,7 +97,7 @@ a = set('absdfjosdif')
 b = set('sdf')
 # 支持这种运算，NB，也支持逻辑运算  ^ letters in b or in a but not both
 print(a - b)
-print("-----------------------------------------")
+print("-"*40)
 
 # 字典
 print("字典")
@@ -109,7 +108,7 @@ aaa = dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 print(aaa)
 # 关键字是比较简单的字符串时，直接用关键字参数指定键值对更便捷
 ccc = dict(sape=4139, guido=4127, jack=4098)
-print("-----------------------------------------")
+print("-"*40)
 
 # 循环技巧
 print("循环技巧")

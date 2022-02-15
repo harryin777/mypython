@@ -2,7 +2,7 @@
 # official chapter 4
 
 
-print("test")
+print("documents")
 # 注意是中括号
 arr = ["t1", "t2", "t3"]
 # 变成了大括号
@@ -49,7 +49,8 @@ def cheeseshop(kind, *arguments, **keywords):
         print(kw, ":", keywords[kw])
 
 
-cheeseshop("Limburger", "It's very runny, sir.",
+# 第一个应该是位置参数，后面的元组或者序列构成第二个参数(666也可以被输出证明是一个元组就可以)，最后的字典是第三个参数
+cheeseshop("Limburger", "It's very runny, sir.", 666,
            "It's really very, VERY runny, sir.",
            shopkeeper="Michael Palin",
            client="John Cleese",
@@ -81,8 +82,8 @@ def parrot(voltage, state='a stiff', action='voom'):
 
 
 d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
-parrot(**d)
-print("-------------------------------------")
+parrot(*d)
+print("-" * 40)
 
 
 # lambda 表达式
