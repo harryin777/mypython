@@ -71,7 +71,7 @@ def concat(*args, sep="/"):
     return sep.join(args)
 
 
-concat("earth", "mars", "venus")
+print(concat("earth", "mars", "venus"))
 
 
 # 需要解包

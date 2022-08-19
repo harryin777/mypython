@@ -188,3 +188,27 @@ for i in set(bbb):
     print(i)
 
 print(__name__)
+
+# 拆包和装包
+def run(a, *args):
+    # 第一个参数传给了a
+    print(a)
+    # args是一个元组，里面是2和3两个参数
+    print(args)
+    # *args是将这个元组中的元素依次取出来
+    print("对args拆包")
+    print(*args)  # *args 相当于 a,b = args
+    print("将未拆包的数据传给run1")
+    run1(args)
+    print("将拆包后的数据传给run1")
+    run1(*args)
+
+
+def run1(*args):
+    print("输出元组")
+    print(args)
+    print("对元组进行拆包")
+    print(*args)
+
+
+run(1, 2, 3)  # 后面的2和3
