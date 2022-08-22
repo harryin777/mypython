@@ -21,9 +21,11 @@ for t, status in arr2.items():
 print(list(range(5, 10)))
 print(type(list(range(5, 10))))
 
+print("range begin -------")
 # 只输出 range
 print(range(5, 10))
 print(type(range(5, 10)))
+print("range end -------")
 
 
 def askCheristmas(day, ok=True, saying="merry christmas"):
@@ -38,7 +40,7 @@ def askCheristmas(day, ok=True, saying="merry christmas"):
 askCheristmas(1)
 
 
-# 接受一个字典作为参数 TODO 不是很理解
+# 接受一个字典作为参数
 def cheeseshop(kind, *arguments, **keywords):
     print("-- Do you have any", kind, "?")
     print("-- I'm sorry, we're all out of", kind)
@@ -93,3 +95,6 @@ def make_lambda(n):
 
 f = make_lambda(1)
 print(f(100))
+
+print('\'这是单引号里的单引号\'')
+print('"这是单引号里的双引号"')
