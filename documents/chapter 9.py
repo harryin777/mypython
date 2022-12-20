@@ -26,7 +26,7 @@ print("构造方法")
 
 
 class A:
-    """lalala"""
+    """ this is des lalala this is des"""
     i = 123
 
     def __init__(self):
@@ -36,6 +36,7 @@ class A:
 c = A()
 print(c.i)
 print("-" * 40)
+print(c.__doc__)
 
 # 构造方法指定未定义的属性
 print("构造方法指定未定义的属性")
