@@ -18,11 +18,11 @@ for item in df["class"]:
         df["class"][count] = 3
     count = count + 1
 
-for lable in cols:
-    plt.hist(df[df["class"] == 1][lable], color='blue', label='gmma', alpha=0.7, density=True)
-    plt.hist(df[df["class"] == 2][lable], color='red', label='gmma', alpha=0.7, density=True)
-    plt.title(lable)
+for label in cols:
+    plt.hist(df[df["class"] == 1][label], color='blue', label='gmma', alpha=0.7, density=True)
+    plt.hist(df[df["class"] == 2][label], color='red', label='hadron', alpha=0.7, density=True)
+    plt.title(label)
     plt.ylabel("Probability")
-    plt.xlabel(lable)
+    plt.xlabel(label)
     plt.legend()
     plt.show()
