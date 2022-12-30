@@ -20,6 +20,19 @@ df["class"]=(df["class"]=="g").astype(int)
 
 # train, valid, test = np.split(df.sample(frac=1), [int(0.6*len(df)), int(0.8*len(df))])
 
+
+def scale_dataset(dataframe):
+  X = dataframe[dataframe.cols[:-1]].values
+  y = dataframe[dataframe.cols[-1]].values
+
+  scaler = StandardScaler()
+  X = scaler.fit_transform(X)
+
+  data = np.hstack((X, np.reshape(y, (-1, 1))))
+  return data, X, y
+
+
+# test test test
 X = df[df.columns[:-1]].values
 y = df[df.columns[-1]].values
 scaler = StandardScaler()
